@@ -1,0 +1,20 @@
+[
+  '{{repeat(5, 700)}}',
+  {
+    Sigla:'{{company()}}',
+    Nome: '{{firstName()}} {{surname()}}',
+    Capacidade: '{{integer(100, 10000)}}',
+    Endereco: {
+      Id:'{{guid()}}',
+      Bairro: '{{lorem(1, "words")}}',
+      Cidade: '{{city()}}',
+      Pais:'{{lorem(1, "words")}}',
+      CEP: '{{integer(100, 10000)}}',
+      Logradouro: '{{lorem(1, "words")}}',
+      Estado: '{{state()}}',
+      Numero: '{{integer(20, 4000)}}',
+      Complemento:''    
+    }
+    
+  }
+]

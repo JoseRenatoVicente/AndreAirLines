@@ -1,0 +1,24 @@
+[
+  '{{repeat(5, 700)}}',
+  {
+    Cpf: '{{integer(10000000000,99999999999)}}',
+    Nome: '{{firstName()}} {{surname()}}',
+    Telefone: '{{phone()}}',
+    Sexo: '{{random("Masculino", "Feminino")}}',
+    DataNasc: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-dd")}}',
+    Email: '{{email()}}',
+    Endereco: {
+      Id:'{{guid()}}',
+      Bairro: '{{lorem(1, "words")}}',
+      Cidade: '{{city()}}',
+      Pais:'{{country()}}',
+      CEP: '{{integer(100, 10000)}}',
+      Logradouro: '{{lorem(1, "words")}}',
+      Estado: '{{random("SP", "RJ")}}',
+      Numero: '{{integer(20, 4000)}}',
+      Complemento:''
+    
+    }
+   
+  }
+]

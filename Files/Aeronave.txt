@@ -1,0 +1,9 @@
+[
+  '{{repeat(5, 700)}}',
+  {
+    Id:'{{guid()}}',
+    Nome: '{{firstName()}} {{surname()}}',
+    Capacidade: '{{integer(100, 10000)}}'
+    
+  }
+]

@@ -1,0 +1,69 @@
+[
+  "{{repeat(5, 700)}}",
+  {
+    "Id": "{{guid()}}",
+    "voo": {
+      "Id": "{{guid()}}",
+      "destino": {
+        "Sigla": "{{random(\"A\", \"B\",\"C\",\"D\",\"E\") + integer(10000,9999999) + random(\"A\", \"B\",\"C\",\"D\",\"E\")}}",
+        "Nome": "{{firstName()}} {{surname()}}",
+        "Capacidade": "{{integer(100, 10000)}}",
+        "endereco": {
+          "Id": "{{guid()}}",
+          "Bairro": "{{lorem(1, \"words\")}}",
+          "Cidade": "{{city()}}",
+          "Pais": "{{lorem(1, \"words\")}}",
+          "CEP": "{{integer(100, 10000)}}",
+          "Logradouro": "{{lorem(1, \"words\")}}",
+          "Estado": "{{random(\"SP\", \"RJ\")}}",
+          "Numero": "{{integer(20, 4000)}}",
+          "Complemento": ""
+        }
+      },
+      "origem": {
+        "Sigla": "{{random(\"A\", \"B\",\"C\",\"D\",\"E\") + integer(10000,9999999) + random(\"A\", \"B\",\"C\",\"D\",\"E\")}}",
+        "Nome": "{{firstName()}} {{surname()}}",
+        "Capacidade": "{{integer(100, 10000)}}",
+        "Endereco": {
+          "Id": "{{guid()}}",
+          "Bairro": "{{lorem(1, \"words\")}}",
+          "Cidade": "{{city()}}",
+          "Pais": "{{lorem(1, \"words\")}}",
+          "CEP": "{{integer(100, 10000)}}",
+          "Logradouro": "{{lorem(1, \"words\")}}",
+          "Estado": "{{random(\"SP\", \"RJ\")}}",
+          "Numero": "{{integer(20, 4000)}}",
+          "Complemento": ""
+        }
+      },
+      "aeronave": {
+        "Id": "{{random(\"A\", \"B\",\"C\",\"D\",\"E\") + integer(10000,9999999) + random(\"A\", \"B\",\"C\",\"D\",\"E\")}}",
+        "Nome": "{{firstName()}} {{surname()}}",
+        "Capacidade": "{{integer(100, 10000)}}"
+      },
+      "HorarioEmbarque": "{{date(new Date(2014, 0, 1), new Date(), \"YYYY-MM-dd\")}}",
+      "HorarioDesembarque": "{{date(new Date(2014, 0, 1), new Date(), \"YYYY-MM-dd\")}}"
+    },
+
+    "passageiro": {
+      "Cpf": "{{integer(10000,99999999) + integer(10000,99999999)}}",
+      "Nome": "{{firstName()}} {{surname()}}",
+      "Telefone": "{{phone()}}",
+      "Sexo": "{{random(\"Masculino\", \"Feminino\")}}",
+      "DataNasc": "{{date(new Date(2014, 0, 1), new Date(), \"YYYY-MM-dd\")}}",
+      "Email": "{{email()}}",
+      "Endereco": {
+        "Id": "{{guid()}}",
+        "Bairro": "{{lorem(1, \"words\")}}",
+        "Cidade": "{{city()}}",
+        "Pais": "{{lorem(1, \"words\")}}",
+        "CEP": "{{integer(100, 10000)}}",
+        "Logradouro": "{{lorem(1, \"words\")}}",
+        "Estado": "{{random(\"SP\", \"RJ\")}}",
+        "Numero": "{{integer(20, 4000)}}",
+        "Complemento": ""
+
+      }
+    }
+  }
+]
